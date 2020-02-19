@@ -46,7 +46,7 @@ public class EmployeeAdapter extends ArrayAdapter {
         TextView tvjoinDate = v.findViewById(R.id.tv_joindate);
 
 
-        final Employee employee =employees.get(position);
+        final Employee employee = employees.get(position);
         tvname.setText(employee.getName());
         tvsalary.setText(String.valueOf(employee.getSalary()));
         tvdept.setText(employee.getDept());

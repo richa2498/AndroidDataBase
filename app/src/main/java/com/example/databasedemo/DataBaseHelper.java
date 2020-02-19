@@ -67,11 +67,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+
     Cursor getAllEmployee(){
         SQLiteDatabase sqLiteDatabase =getReadableDatabase();
         return sqLiteDatabase.rawQuery("SELECT * FROM "+TABLE_NAME,null);
 
     }
+
     boolean updateEmployee(int id,String name,String dept,double salary){
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 

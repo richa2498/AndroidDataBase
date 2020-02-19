@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         
 //        mDatabase = openOrCreateDatabase(DATABASE_NAME,MODE_PRIVATE,null);
 //        createTable();
+mDatabase = new DataBaseHelper(this);
 
-
-        mDatabase = new DataBaseHelper(this);
+        //mDatabase = new DataBaseHelper(this);
 
     }
 /*
